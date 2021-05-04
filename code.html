@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Made Easy</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Righteous', cursive;
+        color: white;
+        margin: 0px;
+        padding: 3px;
+        background: url('img/1.jpg');
+    }
+    
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+    }
+    
+    .left img {
+        width: 123px;
+    }
+    
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+        border: 3px solid green;
+    }
+    
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid yellow;
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .navbar a {
+        color: yellow;
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: skyblue;
+        text-decoration: underline;
+    }
+    
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 6px;
+        border: 3px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: cornflowerblue;
+    }
+    
+    .container {
+        border: 2px solid white;
+        margin: 150px 80px;
+        width: 33%;
+        padding: 50px;
+        border-radius: 30px;
+    }
+    
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 144px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-family: 'Righteous', cursive;
+    }
+    
+    .container h1 {
+        text-align: center;
+    }
+    
+    .container button {
+        display: block;
+        width: 144px;
+        padding: 6px;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/Logo.png" alt="">
+            <div>Code Made Easy</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Subscribe</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Welcome to Code Made Easy</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
